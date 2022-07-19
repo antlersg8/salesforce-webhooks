@@ -24,7 +24,8 @@
     "test:coverage": "c8 yarn test",
     "clean": "rm -rf dist",
     "lint": "eslint .",
-    "lint:format": "yarn lint --fix"
+    "lint:format": "yarn lint --fix",
+    "prepare": "npm run build"
   },
   "repository": {
     "type": "git",
