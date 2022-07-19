@@ -3,6 +3,7 @@ public abstract class {{webhookCalloutName}} {
     public static String jsonContent(final Map<String, Object> eventContent) {
         final Map<String, Object> content = new Map<String, Object>(eventContent);
         content.put('UserId', UserInfo.getUserId());
+        content.put('OrgId', UserInfo.getOrganizationId());
         return JSON.serialize(content);
     }
 
